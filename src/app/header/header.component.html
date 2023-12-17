@@ -1,31 +1,33 @@
-<div class="header">
-    <div class="Home">
-        <a [routerLink]="['/Home']" routerLinkActive="router-link-active"  class="btn-link">
-            <button class="btn">
-                Home
-            </button>
-        </a>
-    </div>
-    <div class="Resume">
-        <a [routerLink]="['/Resume']" routerLinkActive="router-link-active" class="btn-link">
-            <button class="btn">
-                Resume
-            </button>
-        </a>
-    </div>
-    <div [routerLink]="['/Projects']" routerLinkActive="router-link-active"  class="Projects">
-        <a class="btn-link">
-            <button class="btn">
-                Projects
-            </button>
-        </a>
-    </div>
-    <div class="Contact">
-        <a [routerLink]="['/Contact']" routerLinkActive="router-link-active" class="btn-link">
-            <button class="btn">
-                Contact
-            </button>
-        </a>
-    </div>
+<div class = "container"> 
+  <nav class="header">
+        <div class="Home">
+            <a [routerLink]="['/Home']" routerLinkActive="router-link-active"  class="btn-link">
+                <button class="btn">
+                    Home
+                </button>
+            </a>
+        </div>
+        <div class="Resume">
+            <a [routerLink]="['/Resume']" routerLinkActive="router-link-active" class="btn-link">
+                <button class="btn">
+                    Resume
+                </button>
+            </a>
+        </div>
+        <div [routerLink]="['/Projects']" routerLinkActive="router-link-active"  class="Projects">
+            <a class="btn-link">
+                <button class="btn">
+                    Projects
+                </button>
+            </a>
+        </div>
+        <div class="Contact">
+            <a [routerLink]="['/Contact']" routerLinkActive="router-link-active" class="btn-link">
+                <button class="btn">
+                    Contact
+                </button>
+            </a>
+        </div>
+    </nav>
 </div>
 <router-outlet></router-outlet>
