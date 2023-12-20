@@ -1,3 +1,4 @@
+
 @font-face{
     font-family : Poppins-Bold;
     src : url('../../assets/fonts/Poppins-Bold.ttf')
@@ -6,6 +7,7 @@
     font-family : Poppins;
     src : url('../../assets/fonts/Poppins-Regular.ttf')
   }
+p
 .container{
     display: flex;
     flex-direction : row;
@@ -17,11 +19,15 @@
     height:100%;
 }
 
+
+
+=======
 img{
     width: 76%;
     height: auto;
     margin: 0;  
 }
+
 p{
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -30,8 +36,7 @@ p{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin : 5px;
-}
+    margin : 5px;}
 .subtitle{
     font-weight: 400;
 }
@@ -57,6 +62,11 @@ p{
     text-shadow : none;
     transition : all 0.15s ease 
 
+}
+
+
+.right--home{
+    height : 90%;
 }
 
 
