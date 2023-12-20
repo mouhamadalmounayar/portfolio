@@ -7,7 +7,7 @@
     font-family : Poppins;
     src : url('../../assets/fonts/Poppins-Regular.ttf')
   }
-p
+
 .container{
     display: flex;
     flex-direction : row;
@@ -21,7 +21,7 @@ p
 
 
 
-=======
+
 img{
     width: 76%;
     height: auto;
