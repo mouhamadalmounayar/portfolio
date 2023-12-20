@@ -1,16 +1,32 @@
-<<<<<<< Updated upstream
-=======
 
+@font-face{
+    font-family : Poppins-Bold;
+    src : url('../../assets/fonts/Poppins-Bold.ttf')
+  }
+  @font-face{
+    font-family : Poppins;
+    src : url('../../assets/fonts/Poppins-Regular.ttf')
+  }
+p
 .container{
     display: flex;
     flex-direction : row;
     align-items: center;
     justify-content: space-around;
+    transition : opacity 0.50s ease;
     background: linear-gradient(180deg, #05A4FF 0%, #0043C7 202.89%);
     margin-top : 98px;
     height:100%;
 }
 
+
+
+=======
+img{
+    width: 76%;
+    height: auto;
+    margin: 0;  
+}
 
 p{
     color: #FFF;
@@ -20,9 +36,7 @@ p{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin : 5px;
-    
-}
+    margin : 5px;}
 .subtitle{
     font-weight: 400;
 }
@@ -50,14 +64,12 @@ p{
 
 }
 
+
 .right--home{
     height : 90%;
 }
 
-.right--home > img{
-    height : 100%;
-}
 
 
 
->>>>>>> Stashed changes
+
