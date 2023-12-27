@@ -8,12 +8,12 @@
     src: url('../../assets/fonts/Poppins-Regular.ttf')
 }
 
-.container {
+.home--container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(180deg, #05A4FF 0%, #0043C7 202.89%);
+    background: linear-gradient(180deg, #05a4ff 0%, #0043C7 202.89%);
     margin-top: 98px;
     height: 100%;
 }

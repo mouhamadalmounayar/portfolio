@@ -1,0 +1,25 @@
+.card{
+    font-family: Poppins;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+button{
+    background-color: #E02D6C;
+    border: none;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: #e02d6cda;
+}
+.tagContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.tags{
+    margin-right: 10px;
+}
+
