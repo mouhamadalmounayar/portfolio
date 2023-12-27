@@ -1,1 +1,12 @@
-<p>projects works!</p>
+<div class="projects--container">
+    <h3>My Projects</h3>
+    <div class="input--filter">
+        <input #filter placeholder="Search by tags" (input) = "filterProjects(filter.value)">
+        <img src="../../assets/images/icons8-chercher.svg" >
+    </div>
+    <div class="projects-subContainer">
+        <div class="projectCards" *ngFor="let project of this.filteredProjects">
+            <app-card-projects [project]=project></app-card-projects>
+        </div>
+    </div>
+</div>
