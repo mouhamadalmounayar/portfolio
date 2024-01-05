@@ -1,16 +1,9 @@
 <div class = "header--container"> 
   <nav class="header">
         <div class="Home">
-            <a [routerLink]="['/Home']" routerLinkActive="router-link-active"  class="btn-link">
+            <a [routerLink]="['']" routerLinkActive="router-link-active"  class="btn-link">
                 <button class="btn">
                     Home
-                </button>
-            </a>
-        </div>
-        <div class="Resume">
-            <a [routerLink]="['/Resume']" routerLinkActive="router-link-active" class="btn-link">
-                <button class="btn">
-                    Resume
                 </button>
             </a>
         </div>
@@ -30,4 +23,5 @@
         </div>
     </nav>
 </div>
+
 <router-outlet></router-outlet>

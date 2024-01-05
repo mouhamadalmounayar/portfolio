@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
 import { Project } from '../models/Project';
-import { Tag } from '../models/Tag';
 import { CardProjectsComponent } from '../card-projects/card-projects.component';
 import { NgFor } from '@angular/common';
 import { ProjectsService } from './projects.service';
-import { ProjectModalComponent } from '../project-modal/project-modal.component';
+import { projectsAnimation } from '../animations/projectsAnimations';
+
+
+
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CardProjectsComponent, NgFor, ProjectModalComponent],
+  imports: [CardProjectsComponent, NgFor, ],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrl: './projects.component.css',
+  animations: [projectsAnimation], 
 })
 export class ProjectsComponent {
     filteredProjects : Project[] = [];
@@ -26,7 +29,7 @@ export class ProjectsComponent {
         this.filteredProjects = this.getProjects();
       }
       else{
-        this.filteredProjects = this.getProjects().filter(project => project.tags.toString().toLowerCase().includes
+        this.filteredProjects = this.getProjects().filter(project => project.name.toLowerCase().includes
         (text.toLowerCase()))
       }
     }

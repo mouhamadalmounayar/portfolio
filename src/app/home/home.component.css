@@ -8,60 +8,63 @@
     src: url('../../assets/fonts/Poppins-Regular.ttf')
 }
 
-.home--container {
+.home--container{
+    margin-top : 15%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(180deg, #05a4ff 0%, #0043C7 202.89%);
-    margin-top: 98px;
-    height: 100%;
+    padding : 20px;
+    background: linear-gradient(to left, #05a4ff 0%, #0043C7 202.89%);
+    margin : 0;
 }
-
-img {
-    height: 100%;
-    width: auto;
+.welcome{
+    width : 50%;
+    height : 50%;
+    margin : 0;
 }
-
-p {
-    color: #FFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.caption{
+    display: flex;
+    align-items : center;
+    flex-direction: column;
+}
+.caption h3{
+    font-size : 15px;
     font-family: Poppins;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 5px;
+    color: white;
 }
-
-.subtitle {
-    font-weight: 400;
-}
-
-.btn {
-    border-radius: 65px;
-    border: 4px solid #FFF;
-    width: 328px;
-    height: 104px;
-    background-color: transparent;
-    color: #FFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.caption h4{
     font-family: Poppins;
-    font-size: 37px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    color: white
+}
+button{
+    background : transparent;
+    color: white;
+    border: 2px solid white;
     cursor: pointer;
-    transition: all 0.15s ease
+    padding: 10px;
+    width : 150px;
+    border-radius: 40px;
 }
+@media screen and (min-width : 600px) {
+    .home--container{
+        flex-direction : row;
+        justify-content: space-around;
+    }
+    .welcome { 
+        width : 25%;
+        height : 25%;
+    }
+    .caption h3 {
+        font-size : 30px;
+    }
+    .caption h4 {
+        font-size : 30px;
+    }
+    .caption {
+        align-items : flex-start;
+    }
+    button {
+        font-size : 20px;
+    }
 
-.btn:hover {
-    background-color: white;
-    color: #0250ec;
-    text-shadow: none;
-    transition: all 0.15s ease
-}
-
-.right--home {
-    height: 90%;
 }

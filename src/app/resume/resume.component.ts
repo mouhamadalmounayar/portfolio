@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Statistics } from './resume.service';
+import { ScrollAnimationDirective } from '../directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [],
+  imports: [ScrollAnimationDirective],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
 })

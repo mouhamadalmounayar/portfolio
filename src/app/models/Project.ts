@@ -5,4 +5,7 @@ export interface Project {
     name: string;
     description: string;
     tags : Tag[]; 
+    github: string;
+    longDescription : string;
+    image : string;
 }

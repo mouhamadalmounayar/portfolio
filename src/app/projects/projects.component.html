@@ -1,12 +1,17 @@
-<div class="projects--container">
-    <h3>My Projects</h3>
-    <div class="input--filter">
-        <input #filter placeholder="Search by tags" (input) = "filterProjects(filter.value)">
-        <img src="../../assets/images/icons8-chercher.svg" >
+<div class="header">
+    <div class="caption--container">
+        <div class="title">Developement Projects</div>
+        <div class="caption">Have a glimpse of the fruit of my rare free time.</div>
     </div>
-    <div class="projects-subContainer">
-        <div class="projectCards" *ngFor="let project of this.filteredProjects">
-            <app-card-projects [project]=project></app-card-projects>
+    <img src="../../assets/images/explaining.svg" alt="">
+</div>
+
+<div class="projects--container" [@stagger]="filteredProjects">
+    <h3>My Projects</h3>
+    <input type="text" (input)="filterProjects(filter.value)" #filter placeholder="Type to search">
+    <div class="projects--cards--container">
+        <div class="projectsCards" *ngFor="let project of filteredProjects">
+            <app-card-projects [project]="project"></app-card-projects>
         </div>
     </div>
 </div>

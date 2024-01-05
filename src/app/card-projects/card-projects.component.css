@@ -1,25 +1,52 @@
-.card{
+@font-face {
     font-family: Poppins;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+    src: url('../../assets/fonts/Poppins-Regular.ttf')
 }
-button{
-    background-color: #E02D6C;
-    border: none;
-    margin-bottom: 20px;
-}
-button:hover{
-    background-color: #e02d6cda;
-}
-.tagContainer{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    justify-content: center;
-}
-.tags{
-    margin-right: 10px;
+@font-face{
+    font-family: Poppins-Bold;
+    src: url('../../assets/fonts/Poppins-Bold.ttf')
 }
 
+.card-title{
+    font-family : Poppins-Bold;
+    color : #176ae5;
+    font-size : 12px;
+
+}
+.card-body{
+    font-family: Poppins;
+    font-size : 10px;
+    color : #48649B;
+}
+a{
+    display: flex;
+    flex-direction : row;
+    justify-content: center;
+}
+.card{
+    background-color: #F7F8FA;
+    width: 15rem; 
+    height: auto;
+}
+a img{
+    width : 15%;
+    height: auto;
+}
+.tag{
+    padding : 5px;
+    color : #48649B;
+
+}
+.tagsContainer{
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+    gap : 20px;
+    margin-bottom : 20px;
+}
+@media screen and (min-width : 450px){
+    .card{
+       width : 15rem;
+       height : auto;
+    }
+}

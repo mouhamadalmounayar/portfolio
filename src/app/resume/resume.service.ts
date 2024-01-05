@@ -7,9 +7,9 @@ export class Statistics {
     private certification: number;
     private problems: number;
     constructor() {
-        this.projects = 0;
-        this.certification = 0;
-        this.problems = 0;
+        this.projects = 4;
+        this.certification = 1;
+        this.problems = 10;
     }
     getProjects(): number {
         return this.projects;
