@@ -9,7 +9,8 @@
 
 .card-title{
     font-family : Poppins-Bold;
-    color : #176ae5
+    color : #176ae5;
+    font-size : 12px;
 
 }
 .card-body{
@@ -24,6 +25,8 @@ a{
 }
 .card{
     background-color: #F7F8FA;
+    width: 15rem; 
+    height: auto;
 }
 a img{
     width : 15%;
@@ -40,4 +43,10 @@ a img{
     justify-content: flex-start;
     gap : 20px;
     margin-bottom : 20px;
+}
+@media screen and (min-width : 450px){
+    .card{
+       width : 15rem;
+       height : auto;
+    }
 }

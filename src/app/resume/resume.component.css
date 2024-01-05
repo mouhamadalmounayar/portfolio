@@ -12,6 +12,7 @@
 }
 .ultimate--container{
     padding: 10px;
+    background-color: white;
 }
 .container{
     display : flex;
@@ -85,4 +86,19 @@
  .visible {
    opacity : 1;
    transition : all 1s ease;
+ }
+ @media screen and (min-width : 600px) {
+   .container {
+       flex-direction : row;
+       justify-content: space-around;
+       gap : 50px;
+   }
+   .caption{
+      align-items: flex-start;
+   }
+   .statistics--container{
+      flex-direction : row;
+      justify-content: space-around;
+      margin-top : 5%;
+   }
  }

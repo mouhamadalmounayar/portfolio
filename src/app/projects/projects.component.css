@@ -41,13 +41,13 @@
     align-items: center;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background: linear-gradient(to left, #05a4ff 0%, #0043C7 202.89%);
-    height: 40%;
+    height: 45%;
 }
 
 img {
     margin-top: 50%;
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
     transform: scaleX(-1);
 }
 
@@ -55,7 +55,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+    
 }
 
 .projects--container h3 {
@@ -71,8 +72,7 @@ img {
 }
 
 .image {
-    border: 2px solid red;
-    width: inhert;
+    width: inherit;
     height: auto;
 }
 
@@ -90,4 +90,31 @@ input{
 input:focus{
     outline: none;
 }
+.projects--cards--container{
+    display: flex;
+    flex-direction : column;
+    gap : 20px;
+    flex-wrap : wrap;
+}
 
+
+@media screen and (min-width : 450px){
+    .header{
+        justify-content: space-around;
+        height : 60%;
+        gap : 40px;
+    }
+    .caption--container{
+        margin-top : 10%; 
+    }
+    img{
+        margin-top : 25%;
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .projects--cards--container{
+        display: flex;
+        flex-direction : row;
+        gap : 20px;
+    }
+}

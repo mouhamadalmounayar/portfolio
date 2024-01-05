@@ -9,7 +9,9 @@
 <div class="projects--container" [@stagger]="filteredProjects">
     <h3>My Projects</h3>
     <input type="text" (input)="filterProjects(filter.value)" #filter placeholder="Type to search">
-    <div class="projectsCards" *ngFor="let project of filteredProjects">
-        <app-card-projects [project]="project"></app-card-projects>
+    <div class="projects--cards--container">
+        <div class="projectsCards" *ngFor="let project of filteredProjects">
+            <app-card-projects [project]="project"></app-card-projects>
+        </div>
     </div>
 </div>
