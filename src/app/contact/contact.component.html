@@ -1,1 +1,23 @@
-<p>contact works!</p>
+<div class="form-container">
+    <h3>Contact Me</h3>
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" action="#" class="contact-form card">
+        <img class="card-img-top" src="../../assets/images/ContactUsHeader.jpg" alt="Drop me a line below!">
+        <p class="image-caption">Drop me a line below!</p>
+        <div class = "input-container">
+            <input formControlName="name" type="text" class="fullName input-field" placeholder="Full Name" required>
+            <label for="fullName" class = "input-label">Full name</label>
+            <span class="input-highlight"></span>
+        </div>
+        <div class = "input-container">
+            <input formControlName="email" type="text" class="email input-field" placeholder="Email" required>
+            <label for="email" class = "input-label">Email</label>
+            <span class="input-highlight"></span>
+        </div>
+        <div class = "input-container message-container">
+            <input formControlName="message" type="text" class="message input-field" placeholder="Write your message" required>
+            <label for="message" class = "input-label">Message</label>
+            <span class="input-highlight"></span>
+        </div>
+        <button class="btn btn-primary" type="submit">Send</button>
+    </form>
+</div>
