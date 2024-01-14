@@ -1,6 +1,9 @@
 <div class="form-container">
-    <h3>Contact Me</h3>
-    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" action="#" class="contact-form card">
+    <div @zoomOut class="caption--container">
+        <h3>Contact</h3>
+        <h3>Me</h3>
+    </div>
+    <form @zoomOut [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" action="#" class="contact-form card">
         <img class="card-img-top" src="../../assets/images/ContactUsHeader.jpg" alt="Drop me a line below!">
         <p class="image-caption">Drop me a line below!</p>
         <div class = "input-container">

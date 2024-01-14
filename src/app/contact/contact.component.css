@@ -25,6 +25,7 @@ form {
     align-items: center;
     gap: 5px;
     height: 50%;
+
 }
 
 .card {
@@ -96,6 +97,13 @@ input::placeholder{
 button{
     margin-bottom : 40px;
 }
+.caption--container{
+    display : flex;
+    flex-direction : row;
+    gap : 10px;
+    margin-bottom : 50px;
+}
+
 
 
 @media screen and (min-width : 450px) {
