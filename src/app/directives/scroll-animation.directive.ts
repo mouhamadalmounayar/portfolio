@@ -12,7 +12,7 @@ export class ScrollAnimationDirective {
       const scrollPosition = window.scrollY;
       const offset = this.el.nativeElement.offsetTop; 
       const windowHeight = window.innerHeight;
-      if (scrollPosition > offset - windowHeight / 2){
+      if (scrollPosition > offset - windowHeight){
         this.renderer.addClass(this.el.nativeElement , 'visible');
       }
   }

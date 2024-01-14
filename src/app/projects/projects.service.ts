@@ -19,7 +19,7 @@ export class ProjectsService {
     name : "Simulating a Transmission Chain", 
     description : "Simulating a transmission chain in order to verify theoratical conditions on both emission and reception filters.",
     tags : [Tag.Python, Tag.Done],
-    github : "",
+    github : "https://github.com/mouhamadalmounayar/Simulating-a-transmission-chain.git",
     longDescription: "",
     image : "../../assets/images/desktop-wallpaper-electronic-47-electronic-backgrounds-electronic.jpg"
   } , {
@@ -33,7 +33,7 @@ export class ProjectsService {
   }, {
     id : 3, 
     name : "Portfolio Website", 
-    description : "This website!", 
+    description : "I developed my portfolio website using Angular 17 for the frontend and NodeJS (with express framework) for the backend.", 
     tags : [Tag.Angular, Tag.Done],
     github : "https://github.com/mouhamadalmounayar/portfolio.git",
     longDescription: "",
