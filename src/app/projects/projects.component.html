@@ -1,17 +1,1 @@
-<div class="header">
-    <div class="caption--container">
-        <div class="title">Developement Projects</div>
-        <div class="caption">Have a glimpse of the fruit of my rare free time.</div>
-    </div>
-    <img src="../../assets/images/explaining.svg" alt="">
-</div>
-
-<div class="projects--container" [@stagger]="filteredProjects">
-    <h3>My Projects</h3>
-    <input type="text" (input)="filterProjects(filter.value)" #filter placeholder="Type to search">
-    <div class="projects--cards--container">
-        <div class="projectsCards" *ngFor="let project of filteredProjects">
-            <app-card-projects [project]="project"></app-card-projects>
-        </div>
-    </div>
-</div>
+<p>projects works!</p>
