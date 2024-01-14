@@ -1,1 +1,36 @@
-<p>resume works!</p>
+<div class="ultimate--container">
+    <div class="container">
+        <div appScrollAnimation class="caption">
+            <h3 class="title">Why Hire <span class="blue">Me?</span></h3>
+            <p class="paragraph">Aspiring software development apprentice with a keen interest in web development and the cloud environment. Bet you liked the good vocabulary. </p>
+            <button class="btn">Hire Me</button>
+        </div>
+        <div class="skills">
+            <div appScrollAnimation class="skill">
+                <img src="../../assets/images/angular.svg">
+                <h3 class="subTitle">Web Developement</h3>
+                <p>I have taken a tremendous interest in web developement (Seriously I can't sleep). I can now say that  I have a strong grasp of the basics of Angular , NodeJS and expressJS.</p>
+            </div>
+            <div appScrollAnimation class="skill cloud">
+                <img src="../../assets/images/azure-2.svg">
+                <h3 class="subTitle">Cloud environment</h3>
+                <p>
+                    As a student passionate about the cloud, I'm eager to explore scalable and cost-effective solutions using platforms like AWS and Azure. I find excitement in learning about serverless architecture, containerization, etc.</p>
+            </div>
+        </div>
+    </div>
+    <div appScrollAnimation class="statistics--container">
+        <div class="stats">
+            <label class="projects">{{getProjects()}}+</label>
+            <h3>Projects</h3>
+        </div>
+        <div class="stats">
+            <label class="projects">{{getCertification()}}+</label>
+            <h3>Certifications</h3>
+        </div>
+        <div class="stats">
+            <label class="projects">{{getProblems()}}+</label>
+            <h3>LeetCode</h3>
+        </div>
+    </div>
+</div>

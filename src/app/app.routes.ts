@@ -1,8 +1,11 @@
 import { Routes } from '@angular/router';
+import { ProjectsComponent } from './projects/projects.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
-{path : 'Home' , loadComponent : () =>  import('./home/home.component').then(mod => mod.HomeComponent)}, 
-{path : 'Resume', loadComponent : () => import('./resume/resume.component').then(mod => mod.ResumeComponent)},
-{path : 'Contact' , loadComponent : () => import ('./contact/contact.component').then(mod => mod.ContactComponent)},
-{path : 'Projects' , loadComponent : () => import ('./projects/projects.component').then(mod => mod.ProjectsComponent)}
+    {path: '' , component : HomeComponent},
+    {path : 'Projects' , component : ProjectsComponent},
+    {path : 'Contact' , component : ContactComponent} 
 ];
+

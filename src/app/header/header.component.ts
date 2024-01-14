@@ -10,6 +10,4 @@ import { routes } from '../app.routes';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
-
-}
+export class HeaderComponent{ }
