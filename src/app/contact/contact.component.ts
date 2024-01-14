@@ -11,27 +11,23 @@ import { ContactService } from './contact.service';
   imports: [ReactiveFormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
-  animations : [zoomOut]
+  animations: [zoomOut]
 })
 export class ContactComponent {
-  showElement = true;
-  ngOnInit() {
-    this.showElement = false;
-  }
-  constructor(private formBuilder : FormBuilder , private contactService : ContactService){}
+  constructor(private formBuilder: FormBuilder, private contactService: ContactService) { }
   checkoutForm = this.formBuilder.group({
-    name : '',
-    email : '',
-    message : ''
+    name: '',
+    email: '',
+    message: ''
   })
-  onSubmit() : void{
-    if (this.checkoutForm.valid){
-        this.contactService.submitForm(this.checkoutForm.value).subscribe(
-          (response) => {
-            console.log(response)
-            alert(response.message)
-          }
-        )
-      }
+  onSubmit(): void {
+    if (this.checkoutForm.valid) {
+      this.contactService.submitForm(this.checkoutForm.value).subscribe(
+        (response) => {
+          console.log(response)
+          alert(response.message)
+        }
+      )
     }
+  }
 }

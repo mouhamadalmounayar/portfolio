@@ -8,8 +8,8 @@ import { environment } from '../../environments/environment.development';
 })
 export class ContactService {
   private apiUrl = environment.apiUrl
-  constructor(private http : HttpClient) {}
-  submitForm(formData : any) : Observable<any> {
-    return this.http.post(this.apiUrl + "/message" , formData)
+  constructor(private http: HttpClient) { }
+  submitForm(formData: any): Observable<any> {
+    return this.http.post(this.apiUrl + "/message", formData)
   }
 }

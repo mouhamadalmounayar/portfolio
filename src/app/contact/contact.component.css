@@ -2,21 +2,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items : center;
+    align-items: center;
     background: linear-gradient(to left, #05a4ff 0%, #0043C7 202.89%);
     height: 100%;
     gap: 1px;
 }
-p{
-    font-family : Poppins-Bold;
-    color : #05a4ff ;
-    margin-top : 2%;
+
+p {
+    font-family: Poppins-Bold;
+    color: #05a4ff;
+    margin-top: 2%;
 }
-h3{
-    font-family : Poppins-Bold;
-    color : white;
-    display : flex;
-    
+
+h3 {
+    font-family: Poppins-Bold;
+    color: white;
+    display: flex;
+
 }
 
 form {
@@ -30,8 +32,8 @@ form {
 
 .card {
     border: none;
-    width : 20rem; 
-    height : 40rem;
+    width: 20rem;
+    height: 40rem;
 
 }
 
@@ -39,9 +41,10 @@ img {
     opacity: 0.7;
 }
 
-input::placeholder{
-    font-family : poppins;
+input::placeholder {
+    font-family: poppins;
 }
+
 .input-container {
     position: relative;
     margin: 20px;
@@ -57,13 +60,13 @@ input::placeholder{
     outline: none;
     background-color: transparent;
 }
-.message{
-    padding-bottom : 50%;
+
+.message {
+    padding-bottom: 50%;
 }
 
 
 
-/* Input label */
 .input-label {
     position: absolute;
     top: 0;
@@ -94,26 +97,28 @@ input::placeholder{
     width: 100%;
 }
 
-button{
-    margin-bottom : 40px;
+button {
+    margin-bottom: 40px;
 }
-.caption--container{
-    display : flex;
-    flex-direction : row;
-    gap : 10px;
-    margin-bottom : 50px;
+
+.caption--container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 50px;
 }
 
 
 
 @media screen and (min-width : 450px) {
-    .form-container{
-        height : 150%;
-        padding : 45%;
+    .form-container {
+        height: 150%;
+        padding: 45%;
     }
+
     .card {
-         width : 30rem;
-         height : auto;
+        width: 30rem;
+        height: auto;
     }
 
 }
