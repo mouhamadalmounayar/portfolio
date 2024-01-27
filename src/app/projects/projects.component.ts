@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Project } from '../models/Project';
 import { CardProjectsComponent } from '../card-projects/card-projects.component';
 import { NgFor } from '@angular/common';
@@ -14,22 +14,30 @@ import { projectsAnimation } from '../animations/projectsAnimations';
   imports: [CardProjectsComponent, NgFor, ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
-  animations: [projectsAnimation], 
+  animations: [projectsAnimation],
 })
-export class ProjectsComponent {
-    filteredProjects : Project[] = [];
-    constructor(private _projectService : ProjectsService){
-      this.filteredProjects = this.getProjects();
+export class ProjectsComponent implements OnInit {
+    projects : Project[]
+    filteredProjects : Project[] ;
+
+    ngOnInit() {
+      this.getProjects()
     }
-    getProjects(){
-      return this._projectService.getProjects();
+
+  constructor(private _projectService : ProjectsService){
+    }
+    getProjects(): void {
+      this._projectService.getProjectFromServer().subscribe(projects => {
+        this.projects = projects
+        this.filteredProjects = projects
+      });
     }
     filterProjects(text : string){
       if (!text){
-        this.filteredProjects = this.getProjects();
+        this.filteredProjects = this.projects;
       }
       else{
-        this.filteredProjects = this.getProjects().filter(project => project.name.toLowerCase().includes
+        this.filteredProjects = this.projects.filter(project => project.name.toLowerCase().includes
         (text.toLowerCase()))
       }
     }

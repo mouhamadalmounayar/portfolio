@@ -4,7 +4,7 @@
       <h5 class="card-title">{{project.name}}</h5>
       <p class="card-test">{{project.description}}</p>
       <div class="tagsContainer">
-        <label *ngFor="let tag of project.tags" class="tag"> {{tag}}</label>
+        <label > {{project.tags}}</label>
       </div>
       <div class="link-container">
         <a [href]="project.github" ><img src="../../assets/images/github-mark.svg" alt="" class="github"></a>
