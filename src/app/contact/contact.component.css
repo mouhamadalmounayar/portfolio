@@ -6,19 +6,19 @@
     background: linear-gradient(to left, #05a4ff 0%, #0043C7 202.89%);
     height: 100%;
     gap: 1px;
+
 }
 
 p {
-    font-family: Poppins-Bold;
+    font-family: Poppins-Bold, serif;
     color: #05a4ff;
     margin-top: 2%;
 }
 
 h3 {
-    font-family: Poppins-Bold;
+    font-family: Poppins-Bold, serif;
     color: white;
     display: flex;
-
 }
 
 form {
@@ -42,7 +42,7 @@ img {
 }
 
 input::placeholder {
-    font-family: poppins;
+    font-family: poppins, serif;
 }
 
 .input-container {
@@ -113,12 +113,14 @@ button {
 @media screen and (min-width : 450px) {
     .form-container {
         height: 150%;
-        padding: 45%;
     }
 
     .card {
         width: 30rem;
         height: auto;
+    }
+    h3{
+      margin-top : 40px;
     }
 
 }

@@ -1,10 +1,10 @@
-import { Tag } from "./Tag";
+
 
 export interface Project {
-    id: number; 
+    id: number;
     name: string;
     description: string;
-    tags : Tag[]; 
+    tags : string;
     github: string;
     longDescription : string;
     image : string;
