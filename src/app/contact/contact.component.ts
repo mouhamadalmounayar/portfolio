@@ -29,5 +29,8 @@ export class ContactComponent {
         }
       )
     }
+    else {
+      alert("Some required fields are missing.")
+    }
   }
 }

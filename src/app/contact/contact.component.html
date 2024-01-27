@@ -1,18 +1,19 @@
-<div class="form-container">
+<div class="container">
+  <div class = "img-container">
+    <img src="../../assets/images/calling.svg" >
+  </div>
+  <div class="form-container">
     <div @zoomOut class="caption--container">
-        <h3>Contact</h3>
-        <h3>Me</h3>
+      <h3>Drop me a <span>line</span> !</h3>
     </div>
-    <form @zoomOut [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" action="#" class="contact-form card">
-        <img class="card-img-top" src="../../assets/images/ContactUsHeader.jpg" alt="Drop me a line below!">
-        <p class="image-caption">Drop me a line below!</p>
+    <form @zoomOut [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" action="#" class="contact-form">
         <div class="input-container">
-            <input formControlName="name" type="text" class="fullName input-field" placeholder="Full Name" required>
+            <input formControlName="name" type="text" class="fullName input-field" placeholder="What's your full name" required>
             <label for="fullName" class="input-label">Full name</label>
             <span class="input-highlight"></span>
         </div>
         <div class="input-container">
-            <input formControlName="email" type="text" class="email input-field" placeholder="Email" required>
+            <input formControlName="email" type="text" class="email input-field" placeholder="you@example.com" required>
             <label for="email" class="input-label">Email</label>
             <span class="input-highlight"></span>
         </div>
@@ -22,6 +23,11 @@
             <label for="message" class="input-label">Message</label>
             <span class="input-highlight"></span>
         </div>
-        <button class="btn btn-primary" type="submit">Send</button>
+        <button class="button" type="submit">Send</button>
     </form>
+  </div>
+</div>
+<div class = "socials">
+  <a href = "https://github.com/mouhamadalmounayar"><img src="../../assets/images/icons8-github.svg"></a>
+  <a href = "https://www.linkedin.com/in/mouhamad-al-mounayar-00b7b5293/"><img src="../../assets/images/icons8-linkedin.svg"></a>
 </div>
