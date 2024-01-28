@@ -1,11 +1,16 @@
-<form [formGroup] = checkoutForm (ngSubmit) = onSubmit()>
-  <input formControlName = id type = number>
-  <input formControlName = name type = text placeholder="name">
-  <input formControlName = description type = text placeholder="description">
-  <input formControlName = tags type = text placeholder = tags>
-  <input formControlName = github type = text placeholder = "link to project">
-  <input formControlName = image type = text placeholder = "link to an image">
-  <button action = submit >Add Project</button>
-</form>
-<button (click) = submitDelete()>Delete Project</button>
+<div class = ultimate-container>
+  <div class = container>
+    <form [formGroup] = checkoutForm (ngSubmit) = onSubmit()>
+      <h3>Add or Delete Projects</h3>
+      <input formControlName = id type = number>
+      <input formControlName = name type = text placeholder="name">
+      <input formControlName = description type = text placeholder="description">
+      <input formControlName = tags type = text placeholder = tags>
+      <input formControlName = github type = text placeholder = "link to project">
+      <input formControlName = image type = text placeholder = "link to an image">
+      <button class = "btn btn-primary" action = submit >Add Project</button>
+    </form>
+    <button class = "btn btn-primary"(click) = submitDelete()>Delete Project</button>
+  </div>
+</div>
 

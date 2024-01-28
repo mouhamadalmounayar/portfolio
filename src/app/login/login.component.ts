@@ -15,8 +15,10 @@ export class LoginComponent {
   login(password : any) : void {
     let api = environment.apiUrl + '/login'
     this.http.post(api, {password : password} , {responseType : "text"} ).subscribe(response => {
-      if (response)
+      if (response) {
         this.cookieService.set('token', response)
+        alert("Login was successful")
+      }
     })
   }
   constructor (private http : HttpClient , private cookieService : CookieService) {}

@@ -15,13 +15,12 @@ export class AddProjectComponent {
   constructor(private formBuilder : FormBuilder , private service : AddProjectService){}
   onSubmit(){
     this.service.submit(this.checkoutForm.value).subscribe(response => {
-      console.log(response)
-      console.log("submitting form")
+      alert("Project added!")
     })
   }
   submitDelete() {
     this.service.submitDelete().subscribe(response => {
-        console.log(response)
+        alert("Project deleted")
     })
   }
   checkoutForm = this.formBuilder.group({
