@@ -1,5 +1,5 @@
 <div class="container">
-  <div class = "img-container">
+  <div @zoomOut class = "img-container">
     <img src="../../assets/images/calling.svg" >
   </div>
   <div class="form-container">
@@ -8,18 +8,17 @@
     </div>
     <form @zoomOut [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" action="#" class="contact-form">
         <div class="input-container">
-            <input formControlName="name" type="text" class="fullName input-field" placeholder="What's your full name" required>
+            <input formControlName="name" type="text" class="fullName input-field"  required>
             <label for="fullName" class="input-label">Full name</label>
             <span class="input-highlight"></span>
         </div>
         <div class="input-container">
-            <input formControlName="email" type="text" class="email input-field" placeholder="you@example.com" required>
+            <input formControlName="email" type="text" class="email input-field"  required>
             <label for="email" class="input-label">Email</label>
             <span class="input-highlight"></span>
         </div>
         <div class="input-container message-container">
-            <input formControlName="message" type="text" class="message input-field" placeholder="Write your message"
-                required>
+            <input formControlName="message" type="text" class="message input-field" required>
             <label for="message" class="input-label">Message</label>
             <span class="input-highlight"></span>
         </div>
@@ -31,3 +30,4 @@
   <a href = "https://github.com/mouhamadalmounayar"><img src="../../assets/images/icons8-github.svg"></a>
   <a href = "https://www.linkedin.com/in/mouhamad-al-mounayar-00b7b5293/"><img src="../../assets/images/icons8-linkedin.svg"></a>
 </div>
+<div class="endCaption"> This website was made using angular and love, and is brought to you by almoonlight.</div>

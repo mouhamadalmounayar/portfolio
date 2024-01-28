@@ -82,7 +82,7 @@ button:hover{
   flex-direction: row;
   gap : 50px;
   justify-content: center;
-  margin-bottom : 5%;
+  margin-bottom : 2%;
 }
 a{
   transition : all ease 0.15s
@@ -94,6 +94,14 @@ a:hover{
 
 .caption--container span{
   color : #05a4ff;
+}
+
+.endCaption{
+  color: #48649B;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width : 600px) {
