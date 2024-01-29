@@ -10,7 +10,7 @@ import {environment} from "../../environments/environment";
 })
 export class ProjectsService {
   getProjectFromServer() : Observable<Project[]>{
-    let api = environment.apiUrl + '/getProjects'
+    let api = environment.apiUrl + 'getProjects'
     return this.http.get<Project[]>(api)
   }
   constructor(private http : HttpClient) { }

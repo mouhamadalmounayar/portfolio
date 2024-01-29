@@ -10,6 +10,6 @@ export class ContactService {
   private apiUrl = environment.apiUrl
   constructor(private http: HttpClient) { }
   submitForm(formData: any): Observable<any> {
-    return this.http.post(this.apiUrl + "/message", formData)
+    return this.http.post(this.apiUrl + "message", formData)
   }
 }

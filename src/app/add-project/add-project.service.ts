@@ -17,7 +17,7 @@ export class AddProjectService {
       'Authorization' : 'Bearer ' + token
     }
     )
-    let api = environment.apiUrl + '/addProject'
+    let api = environment.apiUrl + 'addProject'
     return this.http.post(api , form, {headers})
   }
   submitDelete() : Observable<any>{
@@ -26,7 +26,7 @@ export class AddProjectService {
       'Content-Type' : 'application/json',
       'Authorization' : 'Bearer ' + token
     })
-    let api : string = environment.apiUrl + '/deleteProject'
+    let api : string = environment.apiUrl + 'deleteProject'
     return this.http.delete(api , {headers})
   }
 }
