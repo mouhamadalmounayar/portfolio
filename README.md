@@ -1,27 +1,48 @@
-# Portfolio
+# Portfolio Website 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.4.
+## Description
 
-## Development server
+This repository contains the source code for the frontend of my personal portfolio website built using Angular. The portfolio showcases my skills, projects, and provides information about me.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Responsive design for various devices.
+- Sections for Skills, Projects, and Contact.
+- Dynamic content loading using Angular components.
+- Smooth navigation with Angular Router.
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular 17
+- HTML5
+- CSS3
+- TypeScript
 
-## Running end-to-end tests
+## Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To get a local copy of the project, follow these steps:
 
-## Further help
+1. Clone the repository:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+https://github.com/mouhamadalmounayar/portfolio.git
+```
+2. Install the dependencies
+```angular2html
+npm install
+```
+3. Run the project
+```angular2html
+ng serve
+```
+## Usage
+To checkout my website, click on this link : https://mhmd.almoonlight.com/
+
